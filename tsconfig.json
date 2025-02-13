@@ -1,0 +1,17 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "allowJs": true,
+    "strict": true,
+    "noImplicitAny": false,
+    "jsx": "preserve",
+    "target": "ES2015",
+    "lib": ["ES2015", "DOM"]
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.vue"]
+}
