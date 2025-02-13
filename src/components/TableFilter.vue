@@ -32,9 +32,9 @@
           @click="toggleDropdown"
           @blur="closeDropdown"
           tabindex="0"
-          class="w-full mt-1 py-2 px-3 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm cursor-pointer flex justify-between items-center"
+          class="text-gray-600 w-full mt-1 py-2 px-3 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm cursor-pointer flex justify-between items-center"
         >
-          <span>{{ selectedOption || 'Options' }}</span>
+          <span>{{ selectedOption }}</span>
           <svg
             :class="{ 'transform rotate-180': isOpen }"
             class="w-5 h-5 text-gray-500 transition-transform duration-300"
