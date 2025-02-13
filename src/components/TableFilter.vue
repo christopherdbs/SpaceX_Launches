@@ -60,7 +60,7 @@
               v-for="option in options"
               :key="option"
               @mousedown.prevent="selectOption(option)"
-              class="p-2 hover:bg-blue-500 hover:text-white cursor-pointer"
+              class="p-2 text-gray-600 hover:bg-blue-500 hover:text-white cursor-pointer"
             >
               {{ option }}
             </li>

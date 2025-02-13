@@ -65,9 +65,10 @@
           ><img :src="launch.links.patch.small" class="h-25 m-auto"
         /></span>
         <div class="flex flex-col grow">
-          <span class="font-semibold text-xl justify-start text-left">{{
-            launch.name
-          }}</span>
+          <span
+            class="text-gray-600 font-semibold text-xl justify-start text-left"
+            >{{ launch.name }}</span
+          >
           <span class="text-gray-500 text-sm text-left">{{
             launch.date_utc
           }}</span>

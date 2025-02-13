@@ -24,7 +24,7 @@
         ✖
       </button>
 
-      <h2 class="text-2xl font-bold mb-2">{{ launch.name }}</h2>
+      <h2 class="text-gray-600 text-2xl font-bold mb-2">{{ launch.name }}</h2>
       <p class="text-gray-600">{{ launch.date_utc }}</p>
 
       <img
@@ -39,12 +39,12 @@
       </p>
 
       <div class="mt-4">
-        <p class="font-semibold">Launch Site:</p>
+        <p class="text-gray-600 font-semibold">Launch Site:</p>
         <p class="text-gray-600">{{ launch.launchpad.name }}</p>
       </div>
 
       <div class="mt-4">
-        <p class="font-semibold">Payloads:</p>
+        <p class="text-gray-600 font-semibold">Payloads:</p>
         <div class="text-gray-600">
           <div
             v-for="payload in launch.payloads"

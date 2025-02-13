@@ -1,11 +1,6 @@
-<script>
-  export default {
-    name: 'Header',
-  };
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <!-- Header -->
   <div class="bg-white shadow-md p-20">
     <div
       class="mx-auto px-4 py-2 flex flex-col justify-between items-center m-auto"
@@ -18,9 +13,4 @@
   </div>
 </template>
 
-<style scoped>
-  #navBar {
-    background-color: #888;
-    min-height: 10vh;
-  }
-</style>
+<style scoped></style>
