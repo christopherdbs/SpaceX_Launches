@@ -5,63 +5,17 @@
 This Vue.js application displays SpaceX launches using the SpaceX v5 API. It includes:
 
 - The **next launch** with a **real-time countdown**.
-- A **filter** (`All`, `Succeeded`, `Failed`) to display the last 10 launches.
+- The last 10 launches displayed depending on the **filter** applied (`All`, `Succeeded`, `Failed`) .
 - A **modal** displaying **detailed information** about a selected launch.
 
 ## 🛠 Technologies Used
 
 - **Vue.js 3** with Composition API
 - **TypeScript**
-- **SpaceX v5 API** (public access, no authentication required)
+- **SpaceX v5 API**
 - **Axios** for API requests
 - **Tailwind CSS** for styling
-- **Animations** (chosen by the candidate)
 - **YouTube Embed** for mission videos
-
-## 📂 Project Structure
-
-```
-/src
-  ├── components
-  │   ├── NextLaunch.vue      # Displays the next launch with countdown
-  │   ├── FilterTable.vue     # Dropdown filter for launches
-  │   ├── LaunchesTable.vue   # List of the last 10 launches
-  │   ├── LaunchModal.vue     # Details of the selected launch
-  ├── pages
-  │   ├── Main.vue            # Main page managing state
-```
-
-## 📜 Features
-
-### 🛰️ Next Launch
-
-- Displays the **name** and **date** of the next launch.
-- **Countdown timer** updating in real-time.
-
-### 🔍 Launch Filtering
-
-- A `<select>` dropdown to filter:
-  - **All launches**
-  - **Successful launches** ✅
-  - **Failed launches** ❌
-
-### 📋 List of the Last 10 Launches
-
-- Displays the **last 10 launches** based on the selected filter.
-- **Clicking on a launch** → opens a **modal** with details.
-
-### 📝 Launch Details Modal
-
-Displays:
-
-- **Launch name**
-- **Date (DD/MM/YYYY format)**
-- **Mission details** (in English)
-- **Illustrative image**
-- **Link to an article**
-- **Launch site name**
-- **Payloads and client names**
-- **YouTube video** (toggle switch to show/hide)
 
 ## 🚀 Installation & Setup
 
@@ -74,8 +28,8 @@ Displays:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/spacex-launch-tracker.git
-cd spacex-launch-tracker
+git clone https://github.com/christopherdbs/SpaceX_Launches
+cd SpaceX_Launches
 
 # Install dependencies
 npm install
@@ -87,7 +41,7 @@ npm install
 npm run dev
 ```
 
-Then open [http://localhost:5173](http://localhost:5173) in your browser.
+Then open it in your browser.
 
 ## ⚠️ Notes
 
