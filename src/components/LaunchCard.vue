@@ -49,7 +49,7 @@
           <div
             v-for="payload in launch.payloads"
             :key="payload.id"
-            class="mb-2 p-2 bg-gray-200 hover:bg-emerald-500"
+            class="mb-2 p-2 bg-gray-100 rounded hover:bg-emerald-500 hover:text-white"
           >
             {{ payload.name }}
             <div class="m-2">

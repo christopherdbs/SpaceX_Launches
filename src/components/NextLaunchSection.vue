@@ -7,7 +7,7 @@
   const nextLaunch = ref<Launch | null>();
   const date_unix = ref<number>(0);
   const timer = ref<string>('');
-
+  let timerInterval: number | undefined;
   const getData = async () => {
     try {
       const response = await Axios.get(
@@ -23,19 +23,21 @@
       //date_unix.value = response.data.date_unix;
       date_unix.value = 1740000488;
       timer.value = getCount(date_unix.value);
-      const timerInterval = setInterval(
+      timerInterval = setInterval(
         () => (timer.value = getCount(date_unix.value)),
         1000,
       );
-      onUnmounted(() => {
-        clearInterval(timerInterval);
-      });
     } catch (err) {
       console.error('Erreur lors de la récupération des données:', err);
     }
   };
 
   onMounted(getData);
+  onUnmounted(() => {
+    if (timerInterval) {
+      clearInterval(timerInterval);
+    }
+  });
 </script>
 
 <template>
